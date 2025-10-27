@@ -52,7 +52,8 @@ module.exports.run = async ({ api, event, args }) => {
 `.trim();
 
 const imagePath = __dirname + "/cache/admin.png";
-const imageURL = "https://drive.google.com/file/d/1ndGVwvbdnuSybssNl1aUaGHMmJMQHsUN/view?usp=drive_link";
+const imageURL = `https://drive.google.com/file/d/1ndGVwvbdnuSybssNl1aUaGHMmJMQHsUN/view?usp=drive_link`;
+  
 
   request(encodeURI(imageURL))
     .pipe(fs.createWriteStream(imagePath))
