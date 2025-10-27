@@ -21,11 +21,11 @@ module.exports.config = {
 
 module.exports.run = async ({ api, event, args }) => {
   const adminInfo = {
-    name: "মাগি খোর চুদানীর ফোয়া",
-    city: "শিমুলিয়া বস্তি",
-    work: "সারাদিন মাগীদের পিছনে ঘোরা আর ভিডিও কলে *** করা",
-    whatsapp: "wa.me/+88018 তারপর মাগি বাজ",
-    facebook: "https://www.facebook.com/yousuf.mahmud.130916"
+    name: "সজল মাদারচোত",
+    city: "গুয়ামরা গ্রাম",
+    work: "চোদোন দেওয়া খালি",
+    whatsapp: "wa.me/+88018 আক্কাস টাকলা ",
+    facebook: "https://www.facebook.com/টাকলা"
   };
 
   const botVersion = global.config.version || "2.0.0";
@@ -51,8 +51,8 @@ module.exports.run = async ({ api, event, args }) => {
 ❖ 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸: 『 IMRAN-API 』
 `.trim();
 
-  const imagePath = __dirname + "/cache/admin.png";
-  const imageURL = `https://graph.facebook.com/100076925531029/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`;
+  const imagePath = __dirname + "https://drive.google.com/file/d/1ndGVwvbdnuSybssNl1aUaGHMmJMQHsUN/view?usp=drive_link";
+  const imageURL = ``;
 
   request(encodeURI(imageURL))
     .pipe(fs.createWriteStream(imagePath))
