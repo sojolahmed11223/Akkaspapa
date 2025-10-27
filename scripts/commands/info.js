@@ -51,8 +51,8 @@ module.exports.run = async ({ api, event, args }) => {
 ❖ 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸: 『 IMRAN-API 』
 `.trim();
 
-  const imagePath = __dirname + "https://drive.google.com/file/d/1ndGVwvbdnuSybssNl1aUaGHMmJMQHsUN/view?usp=drive_link";
-  const imageURL = ``;
+const imagePath = __dirname + "/cache/admin.png";
+const imageURL = "https://drive.google.com/file/d/1ndGVwvbdnuSybssNl1aUaGHMmJMQHsUN/view?usp=drive_link";
 
   request(encodeURI(imageURL))
     .pipe(fs.createWriteStream(imagePath))
